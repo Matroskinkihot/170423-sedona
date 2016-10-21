@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Holet in Sedona</title>
 </head>
 
 <body>
@@ -26,32 +24,30 @@
   <section class="selection">
     <form class="" action="index.html" method="post">
       <div class="infrastructure">
+        <h2>Инфраструктура:</h2>
         <ul>
-          Инфраструктура:
           <li><input type="checkbox" name="pool">Бассейн</li>
           <li><input type="checkbox" name="parking">Парковка</li>
           <li><input type="checkbox" name="wi-fi">WI-FI</li>
         </ul>
       </div>
       <div class="property-type">
+        <h2>Тип жилья:</h2>
         <ul>
-          Инфраструктура:
           <li><input type="checkbox" name="pool">Гостиница</li>
           <li><input type="checkbox" name="parking">Мотель</li>
           <li><input type="checkbox" name="wi-fi">Апартаменты</li>
         </ul>
       </div>
       <div class="cost-per-day">
-        Стоимость в сутки (Р):
-        <table class="cost-table">
-          <tr>
-            <td>от 0</td>
-            <td>до 3000</td>
-          </tr>
-        </table>
+        <h2>Стоимость в сутки (Р):</h2>
+        <div class="cost-table">
+          <!-- Тут диапазон стоимости (над ползунком) -->
+        </div>
         <input type="range" min="0" max="3000" step="100" value="0">
+        <input type="submit" value="Показать">
       </div>
-      <input type="submit" value="Показать">
+
      </form>
   </section>
 
@@ -60,8 +56,8 @@
       <h3>Найдено: 3</h3>
     </div>
     <div class="sort">
+      <span>Сортировка:</span>
       <ul>
-        <li>Сортировка:</li>
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
@@ -69,29 +65,25 @@
     </div>
     <div class="sorting-up-down">
       <ul>
-        <li></li> <!--стрелка вверх -->
-        <li></li> <!--стрелка вниз -->
+        <li><a href="#"></a></li> <!--стрелка вверх -->
+        <li><a href="#"></a></li> <!--стрелка вниз -->
       </ul>
     </div>
   </section>
 
-  <article class="result-1">
+  <article class="result">
     <div class="picture">
       <img src="http://placehold.it/80x80">
     </div>
     <div class="result-name">
-      Amara Resort & SPA
+      <h1><a href="">Amara Resort &amp SPA</a></h1>
       <div class="more">
-        <p>Гостиница </p>
-        <button>
-          <a href="#">Подробнее</a>
-        </button>
+        <span>Гостиница </span>
+        <a href="#">Подробнее</a>
       </div>
       <div class="reserve">
-        <p>От 3500 Р.</p>
-        <button>
-          <a href="#">Забронировать</a>
-        </button>
+        <span>От 3500 Р.</span>
+        <a href="#">Забронировать</a>
       </div>
 
     </div>
@@ -102,27 +94,23 @@
         <li></li> <!-- Звезды -->
         <li></li> <!-- Звезды -->
       </ul>
-      <p> Рейтинг: 8.5</p>
+      <span> Рейтинг: 8.5</span>
     </div>
   </article>
 
-  <article class="result-2">
+  <article class="result">
     <div class="picture">
       <img src="http://placehold.it/80x80">
     </div>
     <div class="result-name">
-      Desert quail inn
+      <h1><a href="#">Desert quail inn</a></h1>
       <div class="more">
-        <p>мотель</p>
-        <button>
-          <a href="#">Подробнее</a>
-        </button>
+        <span>Мотель</span>
+        <a href="#">Подробнее</a>
       </div>
       <div class="reserve">
-        <p>От 2000 Р.</p>
-        <button>
-          <a href="#">Забронировать</a>
-        </button>
+        <span>От 2000 Р.</span>
+        <a href="#">Забронировать</a>
       </div>
 
     </div>
@@ -131,27 +119,23 @@
         <li></li> <!-- Звезды -->
         <li></li> <!-- Звезды -->
       </ul>
-      <p> Рейтинг: 8.9</p>
+      <span> Рейтинг: 8.9</span>
     </div>
   </article>
 
-  <article class="result-3">
+  <article class="result">
     <div class="picture">
       <img src="http://placehold.it/80x80">
     </div>
     <div class="result-name">
-      Villas at poco diablo
+      <h1><a href="#">Villas at poco diablo</a></h1>
       <div class="more">
-        <p>Апартаменты</p>
-        <button>
-          <a href="#">Подробнее</a>
-        </button>
+        <span>Апартаменты</span>
+        <a href="#">Подробнее</a>
       </div>
       <div class="reserve">
-        <p>От 4000 Р.</p>
-        <button>
-          <a href="#">Забронировать</a>
-        </button>
+        <span>От 4000 Р.</span>
+        <a href="#">Забронировать</a>
       </div>
 
     </div>
@@ -161,7 +145,7 @@
         <li></li> <!-- Звезды -->
         <li></li> <!-- Звезды -->
       </ul>
-      <p> Рейтинг: 9.2</p>
+      <span> Рейтинг: 9.2</span>
     </div>
   </article>
 
