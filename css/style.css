@@ -1,4 +1,266 @@
 body{
   font-size: 14px;
   text-transform: uppercase;
+  margin-top: 0;
+}
+.container{
+  width: 1200px;
+  margin: 0px auto;
+}
+h3{
+  font-size: 21px;
+}
+.main-menu{
+  margin: 22px 0;
+  padding: 0 0;
+
+}
+.main-menu li{
+  display: inline-block;
+  width: 240px;
+}
+nav .logo{
+  position: absolute;
+  left:50%;
+  margin-left: -69px;
+  top: 0px;
+  z-index: 30;
+}
+
+.main-menu li:nth-child(1),
+.main-menu li:nth-child(3){
+  padding-left: 72px;
+  box-sizing: border-box;
+}
+.main-menu li:nth-child(2){
+  padding-left: 72px;
+  box-sizing: border-box;
+  margin-right: 240px;
+}
+
+.main-menu li:last-child{
+  padding-left: 67px;
+  padding-right: 72px;
+  width: auto;
+}
+.main-menu li a{
+  text-decoration: none;
+}
+
+.promotion-title{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 575px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.promotion{
+ display: inline-block;
+ font-size: 0px;
+}
+
+.promotion h2{
+  margin-top: 50px;
+  margin-bottom: 29px;
+}
+.promotion span{
+  display: block;
+  margin-bottom: 32px;
+}
+.promotion .discription{
+ font-size: 14px;
+ display: inline-block;
+ vertical-align: top;
+ width: 400px;
+ text-align: center;
+ background-color: #81b3d2;
+ padding-bottom: 59px;
+ min-height: 197px;
+}
+.promotion .nocolor{
+  background-color: white;
+}
+.promotion .picture{
+ display: inline-block;
+  width: 800px;
+}
+
+.bonuses .bonus{
+  display: inline-block;
+  width: 396px;
+}
+.bonuses .bonus img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 31px;
+}
+.bonuses .bonus h2{
+  text-align: center;
+  margin-bottom: 31px;
+}
+.bonuses .bonus p{
+  text-align: center;
+  margin-bottom: 85px;
+}
+.interest{
+  margin-left: auto;
+  margin-right: auto;
+  width: 575px;
+  margin-top: 115px;
+  text-align: center;
+  background-color: yellow;
+  padding-bottom: 53px;
+}
+.map-search{
+  width: 568px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selection{
+  font-size: 0px;
+  min-height: 217px;
+  background-color: red;
+  background-image: url(../img/catalog_intro.jpg);
+}
+.infrastructure{
+  font-size: 14px;
+  min-height: 217px;
+  box-sizing: border-box;
+  padding-left: 72px;
+  padding-top: 32px;
+  width: 312px;
+  display: inline-block;
+  vertical-align: top;
+}
+.property-type{
+  font-size: 14px;
+  min-height: 217px;
+  box-sizing: border-box;
+  width: 288px;
+  padding-top: 32px;
+  padding-left: 15px;
+  display: inline-block;
+  vertical-align: top
+}
+.cost-per-day{
+  font-size: 14px;
+  min-height: 217px;
+  box-sizing: border-box;
+  width: 600px;
+  padding-left: 200px;
+  padding-top: 32px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.selection-result-menu{
+  display: inline-block;
+}
+.selection-result-menu .found{
+  display: inline-block;
+  margin-left: 72px;
+}
+.selection-result-menu .sort{
+  display: inline-block;
+}
+.selection-result-menu .sort span{
+  display: inline-block;
+  margin-left: 50px;
+}
+.selection-result-menu .sort ul{
+  display: inline-block;
+  padding: 0 0;
+}
+.selection-result-menu .sort ul li{
+  display: inline-block;
+  margin-left: 34px;
+}
+.selection-result-menu .sort ul li:last-child{
+margin-right: 389px;
+}
+
+.selection-result-menu .sorting-up-down{
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 72px;
+}
+
+.result{
+  border: 1px solid #e5e5e5;
+  font-size: 0px;
+}
+.result .picture{
+  display: inline-block;
+  width: 237px;
+  box-sizing: border-box;
+  padding: 30px 30px 30px 72px;
+  background-color: yellow;
+}
+.result .result-name{
+  font-size: 14px;
+  display: inline-block;
+  width: 650px;
+  box-sizing: border-box;
+  vertical-align: top;
+  padding-top: 5px;
+  padding-bottom: 43px;
+  background-color: red;
+}
+.result .reserve{
+  font-size: 14px;
+  display: inline-block;
+
+}
+.result .rating{
+  font-size: 14px;
+  padding-top: 64px;
+  padding-bottom: 25px;
+  padding-right: 219px;
+  display: inline-block;
+  background-color: green;
+}
+.result .rating .stars li{
+  display: inline-block;
+}
+
+
+footer{
+  display: inline-block;
+  font-size: 0px;
+}
+footer .hashtag{
+  font-size: 14px;
+  display: inline-block;
+  width: 400px;
+  background-color: yellow;
+  vertical-align: top;
+  text-align: center;
+  padding-top: 50px;
+  min-height: 70px;
+}
+footer .social{
+  font-size: 14px;
+  display: inline-block;
+  width: 400px;
+  background-color: yellow;
+  vertical-align: top;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 14px;
+  min-height: 70px;
+}
+footer .footer-logo{
+  font-size: 14px;
+  display: inline-block;
+  width: 400px;
+  background-color: yellow;
+  vertical-align: top;
+  text-align: center;
+  padding-top: 41px;
+  padding-bottom: 9px;
+  min-height: 70px;
 }
