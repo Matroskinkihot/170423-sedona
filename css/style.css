@@ -13,10 +13,13 @@ h3{
 .main-menu{
   margin: 22px 0;
   padding: 0 0;
+  font-size: 0px;
 
 }
 .main-menu li{
+  font-size: 14px;
   display: inline-block;
+  vertical-align: top;
   width: 240px;
 }
 nav .logo{
@@ -43,7 +46,7 @@ nav .logo{
   padding-right: 72px;
   width: auto;
 }
-.main-menu li a{
+.main-menu a{
   text-decoration: none;
 }
 
@@ -57,6 +60,7 @@ nav .logo{
 }
 .promotion{
  display: inline-block;
+ vertical-align: top;
  font-size: 0px;
 }
 
@@ -83,39 +87,61 @@ nav .logo{
 }
 .promotion .picture{
  display: inline-block;
+ vertical-align: top;
   width: 800px;
 }
 
 .bonuses .bonus{
   display: inline-block;
+  vertical-align: top;
   width: 396px;
 }
-.bonuses .bonus img{
+.bonus img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
   margin-bottom: 31px;
 }
-.bonuses .bonus h2{
+.bonus h2{
   text-align: center;
   margin-bottom: 31px;
 }
-.bonuses .bonus p{
+.bonus p{
   text-align: center;
   margin-bottom: 85px;
 }
 .interest{
   margin-left: auto;
   margin-right: auto;
-  width: 575px;
   margin-top: 115px;
   text-align: center;
   background-color: yellow;
   padding-bottom: 53px;
+  min-height: 708px;
+  background-image: url(../img/map.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 .map-search{
   width: 568px;
+  min-height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+}
+.hotel-search{
+  display: block;
+  padding-left: 56px;
+  padding-top: 155px;
+}
+.hotel-search span{
+  display: inline-block;
+  vertical-align: top;
+  margin-right:  120px;
+  margin-bottom: 57px;
+}
+.map-search input{
   margin-left: auto;
   margin-right: auto;
 }
@@ -159,27 +185,39 @@ nav .logo{
 
 .selection-result-menu{
   display: inline-block;
+  vertical-align: top;
 }
 .selection-result-menu .found{
   display: inline-block;
+  vertical-align: top;
   margin-left: 72px;
+  margin-top: 14px;
+  margin-bottom: 16px;
 }
 .selection-result-menu .sort{
   display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 26px;
 }
-.selection-result-menu .sort span{
+.sort span{
   display: inline-block;
+  vertical-align: top;
   margin-left: 50px;
+  margin-top: 40px;
+  margin-bottom: 14px;
 }
-.selection-result-menu .sort ul{
+.sort ul{
   display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
   padding: 0 0;
 }
-.selection-result-menu .sort ul li{
+.sort  li{
   display: inline-block;
+  vertical-align: top;
   margin-left: 34px;
 }
-.selection-result-menu .sort ul li:last-child{
+.sort li:last-child{
 margin-right: 389px;
 }
 
@@ -190,15 +228,19 @@ margin-right: 389px;
 }
 
 .result{
+  display: inline-block;
+  vertical-align: top;
   border: 1px solid #e5e5e5;
+  border-bottom: 0px;
   font-size: 0px;
 }
+
 .result .picture{
   display: inline-block;
+  vertical-align: top;
   width: 237px;
   box-sizing: border-box;
   padding: 30px 30px 30px 72px;
-  background-color: yellow;
 }
 .result .result-name{
   font-size: 14px;
@@ -208,7 +250,6 @@ margin-right: 389px;
   vertical-align: top;
   padding-top: 5px;
   padding-bottom: 43px;
-  background-color: red;
 }
 .result .reserve{
   font-size: 14px;
@@ -218,25 +259,28 @@ margin-right: 389px;
 .result .rating{
   font-size: 14px;
   padding-top: 64px;
-  padding-bottom: 25px;
-  padding-right: 219px;
+  padding-bottom: 25.5px;
+  padding-right: 218px;
   display: inline-block;
-  background-color: green;
+  vertical-align: top;
 }
-.result .rating .stars li{
+.stars li{
   display: inline-block;
+  vertical-align: top;
 }
 
 
 footer{
   display: inline-block;
+  vertical-align: top;
   font-size: 0px;
 }
 footer .hashtag{
   font-size: 14px;
   display: inline-block;
+  vertical-align: top;
   width: 400px;
-  background-color: yellow;
+  background-color: #6c6c6c;
   vertical-align: top;
   text-align: center;
   padding-top: 50px;
@@ -246,7 +290,7 @@ footer .social{
   font-size: 14px;
   display: inline-block;
   width: 400px;
-  background-color: yellow;
+  background-color: #6c6c6c;
   vertical-align: top;
   text-align: center;
   padding-top: 36px;
@@ -257,7 +301,7 @@ footer .footer-logo{
   font-size: 14px;
   display: inline-block;
   width: 400px;
-  background-color: yellow;
+  background-color: #6c6c6c;
   vertical-align: top;
   text-align: center;
   padding-top: 41px;
