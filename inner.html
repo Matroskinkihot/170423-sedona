@@ -18,7 +18,7 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="inner.html">Гостиницы</a></li>
+        <li class="active"><a href="inner.html">Гостиницы</a></li>
       </ul>
       <div class="logo">
         <a href="#"><img src="img/header_logo.png"  width="138" height="70" alt="logo"></a>
@@ -40,7 +40,7 @@
             <label for="checkbox2">Парковка</label>
           </li>
           <li>
-            <input type="checkbox" name="wi-fi" id="checkbox3">
+            <input type="checkbox" name="wi-fi" id="checkbox3" disabled>
             <label for="checkbox3">WI-FI</label>
           </li>
         </ul>
@@ -57,7 +57,7 @@
             <label for="checkbox5">Мотель</label>
           </li>
           <li>
-            <input type="checkbox" name="apartment" id="checkbox6">
+            <input type="checkbox" name="apartment" id="checkbox6" disabled checked >
             <label for="checkbox6">Апартаменты</label>
           </li>
         </ul>
@@ -81,15 +81,15 @@
     <div class="sort">
       <span>Сортировка:</span>
       <ul>
-        <li><a href="#">По цене</a></li>
+        <li class="active"><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
       </ul>
     </div>
     <div class="sorting-up-down">
       <ul>
-        <li><a class="up" href="#"></a></li> <!--стрелка вверх -->
-        <li><a class="down" href="#"></a></li> <!--стрелка вниз -->
+        <li><a class="up" href="#"></a></li>
+        <li class="active"><a class="down" href="#"></a></li>
       </ul>
     </div>
   </section>

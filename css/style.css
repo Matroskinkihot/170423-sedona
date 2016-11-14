@@ -24,6 +24,15 @@ h3{
   vertical-align: top;
   width: 240px;
 }
+.main-menu .active a{
+  color: #766357;
+}
+.main-menu .active a:hover{
+  color: #8a7d75;
+}
+.main-menu .active a:active{
+  color: #d8d3d0;
+}
 .main-menu a:hover{
   color: #81b3d2;
 }
@@ -295,21 +304,22 @@ nav .logo{
 }
 .infrastructure input[type="checkbox"] + label::before{
   content: "";
+  display: block;
   left: -30px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
-  background-position: -67px -15px;
+  background-position: -123px -15px;
   position: absolute;
 }
 
 .infrastructure input[type="checkbox"]:checked + label::after{
   content: "";
-  left: -36px;
+  left: -30px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
-  background-position: -113px -15px;
+  background-position: -175px -15px;
   position: absolute;
 }
 .infrastructure input[type="checkbox"]:disabled + label::before{
@@ -321,7 +331,15 @@ nav .logo{
   background-position: -15px -15px;
   position: absolute;
 }
-
+.infrastructure input[type="checkbox"]:checked:disabled + label::after{
+  content: "";
+  left: -33px;
+  width: 32px;
+  height: 22px;
+  background-image: url(../img/icons/checkbox.png);
+  background-position: -63px -15px;
+  position: absolute;
+}
 
 
 .infrastructure ul li,
@@ -354,21 +372,20 @@ nav .logo{
 }
 .property-type input[type="checkbox"] + label::before{
   content: "";
-  left: -30px;
-  width: 32px;
-  height: 22px;
-  background-image: url(../img/icons/checkbox.png);
-  background-position: -67px -15px;
-  position: absolute;
-}
-
-.property-type input[type="checkbox"]:checked + label::after{
-  content: "";
-  left: -36px;
+  left: -40px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
   background-position: -113px -15px;
+  position: absolute;
+}
+.property-type input[type="checkbox"]:checked + label::after{
+  content: "";
+  left: -30px;
+  width: 32px;
+  height: 22px;
+  background-image: url(../img/icons/checkbox.png);
+  background-position: -175px -15px;
   position: absolute;
 }
 .property-type input[type="checkbox"]:disabled + label::before{
@@ -378,6 +395,15 @@ nav .logo{
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
   background-position: -15px -15px;
+  position: absolute;
+}
+.property-type input[type="checkbox"]:checked:disabled + label::after{
+  content: "";
+  left: -33px;
+  width: 32px;
+  height: 22px;
+  background-image: url(../img/icons/checkbox.png);
+  background-position: -63px -15px;
   position: absolute;
 }
 .cost-per-day{
@@ -426,6 +452,19 @@ nav .logo{
   vertical-align: middle;
   margin-bottom: 26px;
 }
+.sort .active a{
+  color: #81b3d2;
+  border: none;
+}
+.sort .active a:hover{
+  color: #81b3d2;
+  border: none;
+}
+.sort .active a:active{
+  color: #81b3d2;
+  border: none;
+  font-weight: normal;
+}
 .sort span{
   display: inline-block;
   vertical-align: top;
@@ -450,6 +489,7 @@ nav .logo{
 .sort  a{
   text-decoration: none;
   color: #b2b2b2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort li:last-child{
@@ -502,12 +542,29 @@ margin-right: 389px;
 .sorting-up-down .down:active{
   border-top: 10px solid #81b3d2;
 }
-
 .selection-result-menu .sorting-up-down{
   display: inline-block;
   vertical-align: top;
   padding-right: 72px;
 }
+.sorting-up-down .active a{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #81b3d2;
+}
+.sorting-up-down .active a:hover{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #81b3d2;
+}
+
+
 
 .result{
   display: inline-block;
@@ -628,7 +685,6 @@ margin-right: 389px;
     vertical-align: top;
     box-sizing: border-box;
 }
-
 footer{
   position: absolute;
   bottom: 0px;
@@ -636,7 +692,6 @@ footer{
   vertical-align: top;
   font-size: 0px;
 }
-
 .social-btn{
   display: inline-block;
   vertical-align: top;
@@ -683,13 +738,18 @@ footer{
   background-position: -142px -15px;
 }
 
+
+
+
+
+
 footer .hashtag{
   font-size: 14px;
   text-decoration: none;
   display: inline-block;
   vertical-align: top;
   width: 400px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 1);
   vertical-align: top;
   text-align: center;
   padding-top: 50px;
@@ -705,31 +765,50 @@ footer .social{
   font-size: 14px;
   display: inline-block;
   width: 400px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 1);
   text-align: center;
   vertical-align: bottom;
   padding-top: 36px;
   padding-bottom: 14px;
   min-height: 70px;
 }
-
 footer .footer-logo{
   font-size: 14px;
   display: inline-block;
   width: 400px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 1);
   vertical-align: top;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 20px;
   min-height: 70px;
 }
-footer .footer-logo a{
+footer .footer-logo span{
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 14px;
   vertical-align: middle;
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+}
+.academylogo{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  width: 113px;
+  height: 39px;
+  background-color: inherit;
+  font-size: 0;
+  background-image: url(../img/htmlacademy.png);
+  background-repeat: no-repeat;
+  background-position: -15px -153px;
+}
+.academylogo:hover{
+  background-position: -15px -84px;
+}
+.academylogo:active{
+  background-position: -15px -15px;
 }
