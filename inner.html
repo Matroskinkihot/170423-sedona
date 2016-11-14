@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Holet in Sedona</title>
 </head>
 
@@ -30,17 +31,35 @@
       <div class="infrastructure">
         <h2>Инфраструктура:</h2>
         <ul>
-          <li><input type="checkbox" name="pool">Бассейн</li>
-          <li><input type="checkbox" name="parking">Парковка</li>
-          <li><input type="checkbox" name="wi-fi">WI-FI</li>
+          <li>
+            <input type="checkbox" name="pool" id="checkbox1" checked>
+            <label for="checkbox1">Бассейн</label>
+          </li>
+          <li>
+            <input type="checkbox" name="parking" id="checkbox2">
+            <label for="checkbox2">Парковка</label>
+          </li>
+          <li>
+            <input type="checkbox" name="wi-fi" id="checkbox3">
+            <label for="checkbox3">WI-FI</label>
+          </li>
         </ul>
       </div>
       <div class="property-type">
         <h2>Тип жилья:</h2>
         <ul>
-          <li><input type="checkbox" name="pool">Гостиница</li>
-          <li><input type="checkbox" name="parking">Мотель</li>
-          <li><input type="checkbox" name="wi-fi">Апартаменты</li>
+          <li>
+            <input type="checkbox" name="hotel" id="checkbox4" checked>
+            <label for="checkbox4">Гостиница</label>
+          </li>
+          <li>
+            <input type="checkbox" name="motel" id="checkbox5">
+            <label for="checkbox5">Мотель</label>
+          </li>
+          <li>
+            <input type="checkbox" name="apartment" id="checkbox6">
+            <label for="checkbox6">Апартаменты</label>
+          </li>
         </ul>
       </div>
       <div class="cost-per-day">
@@ -49,7 +68,7 @@
           <!-- Тут диапазон стоимости (над ползунком) -->
         </div>
         <input type="range" min="0" max="3000" step="100" value="0">
-        <input type="submit" value="Показать">
+        <input class="accept" type="submit" value="Показать">
       </div>
 
      </form>
@@ -69,8 +88,8 @@
     </div>
     <div class="sorting-up-down">
       <ul>
-        <li><a href="#"></a></li> <!--стрелка вверх -->
-        <li><a href="#"></a></li> <!--стрелка вниз -->
+        <li><a class="up" href="#"></a></li> <!--стрелка вверх -->
+        <li><a class="down" href="#"></a></li> <!--стрелка вниз -->
       </ul>
     </div>
   </section>
@@ -93,10 +112,10 @@
     </div>
     <div class="rating">
       <ul class="stars">
-        <li></li> <!-- Звезды -->
-        <li></li> <!-- Звезды -->
-        <li></li> <!-- Звезды -->
-        <li></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
       </ul>
       <span> Рейтинг: 8.5</span>
     </div>
@@ -120,8 +139,8 @@
     </div>
     <div class="rating">
       <ul class="stars">
-        <li></li> <!-- Звезды -->
-        <li></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
       </ul>
       <span> Рейтинг: 8.9</span>
     </div>
@@ -145,9 +164,9 @@
     </div>
     <div class="rating">
       <ul class="stars">
-        <li></li> <!-- Звезды -->
-        <li></li> <!-- Звезды -->
-        <li></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
       </ul>
       <span> Рейтинг: 9.2</span>
     </div>
@@ -155,15 +174,16 @@
 
   <footer>
     <div class="hashtag">
-      <h3><a href="#">#Visitsedona</a></h3>
+      <a href="#">#Visitsedona</a>
     </div>
     <div class="social">
-      <a href="#"><img src="img/icons/twitter.png"></a>
-      <a href="#"><img src="img/icons/facebook.png"></a>
-      <a href="#"><img src="img/icons/youtube.png"></a>
+      <a href="#" class="social-btn social-btn-facebook"></a>
+      <a href="#" class="social-btn social-btn-twitter"></a>
+      <a href="#" class="social-btn social-btn-youtube"></a>
     </div>
     <div class="footer-logo">
-      <a href="#"><span>Website by</span><img src="img/htmlacademy_logo.png" width="113" height="39" alt="htmlacademy"></a>
+      <a href="#"><span>Website by</span></a>
+      <a href="#"><img src="img/htmlacademy_logo.png" width="113" height="39" alt="htmlacademy"></a>
     </div>
   </footer>
 

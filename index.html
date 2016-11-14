@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Welcome to Sedona</title>
 </head>
 
@@ -27,13 +28,13 @@
   </header>
 
   <section class="intro">
-    <img src="img/intro_image.jpg"  width="1200" height="772" alt="sedona">
-    <!--     <img src="img/welcome.png" width="458" height="352" alt="welcome"> -->
-    <!--     <img src="img/intro_effect.png"  width="1200" height="57" alt="effect"> -->
+    <img class="background-picture" src="img/intro_image.jpg"  width="1200" height="508" alt="sedona">
+    <img class="welcome" src="img/welcome.png" width="458" height="352" alt="welcome">
+    <img class="effect" src="img/intro_effect.png"  width="1200" height="57" alt="effect">
   </section>
 
   <section class="promotion-title">
-    <h2>Седона - небольшой городок в Аризоне,  Заслуживающий большего</h2>
+    <h2>Седона – небольшой городок в Аризоне,  Заслуживающий большего!</h2>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!<p>
   </section>
 
@@ -43,7 +44,7 @@
 
       <span>– №1 –</span>
 
-      <p>Седона - не аттракцион для туристов,  там течет своя жизнь<p>
+      <p>Седона – не аттракцион для туристов,  там течет своя жизнь<p>
     </div>
     <div class="picture">
       <img src="img/promotion.jpg" width="800" height="256" alt="restaurant">
@@ -74,7 +75,7 @@
         <img src="img/promotion_canyon.jpg"  width="800" height="256" alt="canyon">
       </div>
       <div class="discription">
-        <h2>Там есть Мост дьявола</h2>
+        <h2>Там есть<br>Мост дьявола</h2>
 
         <span>– №2 –</span>
 
@@ -96,7 +97,7 @@
       <p>Ехать в седону из лас-вегаса совсем  не скучно!</p>
     </div>
     <div class="discription nocolor">
-      <h2>Сувениры</h2>
+      <h2>Мало<br> туристов</h2>
       <span>– №5 –</span>
       <p>Большинство едет в гранд каньон и толпится там</p>
     </div>
@@ -104,42 +105,40 @@
 
   <section class="interest">
     <h3>Заинтересовались?</h3>
-    <a href="inner.html">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</a>
-    <a href="#">Поиск гостиницы в седоне</a>
+    <a href="inner.html">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</a>
+    <a class="search" href="#">Поиск гостиницы в седоне
+      <section class="map-search">
+      <form class="#" action="#">
+          <div class="hotel-search">
+            <form  class="search-form" action="#" method="get">
+              <span>Дата заезда:</span>
+              <input type="date" class="arrive-date">
+
+              <span>Дата выезда:</span>
+              <input type="date" class="leaving-date">
+
+              <span>Взрослые:</span>
+              <span>Дети:</span>
+            </form>
+          </div>
+          <input type="submit" value="Найти">
+        </form>
+    </section>
+    </a>
   </section>
-
-  <section class="map-search">
-    <form class="#" action="#">
-        <div class="hotel-search">
-          <form  class="search-form" action="#" method="get">
-            <span>Дата заезда:</span>
-            <input type="date" class="arrive-date">
-
-            <span>Дата выезда:</span>
-            <input type="date" class="leaving-date">
-
-            <span>Взрослые:</span>
-            <span>Дети:</span>
-
-          </form>
-        </div>
-        <input type="submit" value="Показать">
-      </form>
-  </section>
-
-
 
   <footer>
     <div class="hashtag">
       <a href="#">#Visitsedona</a>
     </div>
     <div class="social">
-      <a href="#"><img src="img/icons/twitter.png"></a>
-      <a href="#"><img src="img/icons/facebook.png"></a>
-      <a href="#"><img src="img/icons/youtube.png"></a>
+      <a href="#" class="social-btn social-btn-facebook"></a>
+      <a href="#" class="social-btn social-btn-twitter"></a>
+      <a href="#" class="social-btn social-btn-youtube"></a>
     </div>
     <div class="footer-logo">
-      <a href="#"><span>Website by</span><img src="img/htmlacademy_logo.png" width="113" height="39" alt="htmlacademy"></a>
+      <a href="#"><span>Website by</span></a>
+      <a href="#"><img src="img/htmlacademy_logo.png" width="113" height="39" alt="htmlacademy"></a>
     </div>
   </footer>
 
