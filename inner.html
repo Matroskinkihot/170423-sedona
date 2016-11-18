@@ -63,14 +63,20 @@
         </ul>
       </div>
       <div class="cost-per-day">
-        <h2>Стоимость в сутки (Р):</h2>
-        <div class="cost-table">
-          <!-- Тут диапазон стоимости (над ползунком) -->
+        <div class="cost-per-day-title">Стоимость в сутки (Р):</div>
+        <div class="price-controls">
+          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
         </div>
-        <input type="range" min="0" max="3000" step="100" value="0">
-        <input class="accept" type="submit" value="Показать">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+        <button class="accept" type="submit">Показать</button>
       </div>
-
      </form>
   </section>
 
@@ -112,10 +118,10 @@
     </div>
     <div class="rating">
       <ul class="stars">
-        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
-        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
-        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
-        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li>
+        <li><img src="img/icons/star.png" alt="star"></li>
+        <li><img src="img/icons/star.png" alt="star"></li>
+        <li><img src="img/icons/star.png" alt="star"></li>
       </ul>
       <span> Рейтинг: 8.5</span>
     </div>
@@ -146,7 +152,7 @@
     </div>
   </article>
 
-  <article class="result">
+  <article class="result underline">
     <div class="picture">
       <img src="img/villas.jpg" width="135" height="90" alt="villa">
     </div>
@@ -164,9 +170,9 @@
     </div>
     <div class="rating">
       <ul class="stars">
-        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
-        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
-        <li><img src="img/icons/star.png" alt="star"></li> <!-- Звезды -->
+        <li><img src="img/icons/star.png" alt="star"></li>
+        <li><img src="img/icons/star.png" alt="star"></li>
+        <li><img src="img/icons/star.png" alt="star"></li>
       </ul>
       <span> Рейтинг: 9.2</span>
     </div>
@@ -183,7 +189,7 @@
     </div>
     <div class="footer-logo">
       <a href="#"><span>Website by</span></a>
-      <a href="#"><img src="img/htmlacademy_logo.png" width="113" height="39" alt="htmlacademy"></a>
+      <a href="#" class="academylogo"></a>
     </div>
   </footer>
 

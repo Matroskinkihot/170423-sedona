@@ -9,8 +9,12 @@ body{
   margin: 0px auto;
   box-shadow: 0 10px 30px 8px rgba(0, 0, 0, 0.15);
   position: relative;
+  min-height: 936px;
 }
 h3{
+  font-size: 21px;
+}
+h1{
   font-size: 21px;
 }
 .main-menu{
@@ -52,8 +56,9 @@ nav .logo{
   box-sizing: border-box;
 }
 .main-menu li:nth-child(3){
-  padding-left: 81px;
+  padding-left: 79px;
   box-sizing: border-box;
+  letter-spacing: 0.22px;
 }
 .main-menu li:nth-child(2){
   padding-left: 72px;
@@ -62,8 +67,8 @@ nav .logo{
 }
 
 .main-menu li:last-child{
-  padding-left: 91px;
-  padding-right: 60px;
+  padding-left: 90px;
+  padding-right: 61px;
   width: auto;
 }
 .main-menu a{
@@ -71,7 +76,6 @@ nav .logo{
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   color: black;
-
 }
 .intro .background-picture{
   z-index: 2;
@@ -92,32 +96,36 @@ nav .logo{
 
 .promotion-title{
   padding-top: 40px;
-  padding-bottom: 15px;
-  width: 575px;
+  padding-bottom: 12px;
+  width: 578px;
+  line-height: 1.20;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 .promotion-title p{
   padding-top: 16px;
+  letter-spacing: 0.1px;
 }
 .promotion{
+ margin-top: 0px;
  display: inline-block;
  vertical-align: top;
  font-size: 0px;
 }
 
 .promotion h2{
-  margin-top: 50px;
-  margin-bottom: 29px;
+  margin-top: 44px;
+  margin-bottom: 25px;
 }
 .promotion span{
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 .promotion .discription{
  font-size: 14px;
- padding: 0 60px;
+ padding: 0 20px;
+ padding-top: 6px;
  box-sizing: border-box;
  color: #ffffff;
  display: inline-block;
@@ -126,18 +134,22 @@ nav .logo{
  text-align: center;
  background-color: #81b3d2;
  padding-bottom: 35px;
- min-height: 197px;
+ min-height: 256px;
 }
-.promotion .discription h2{
-  display: block;
+.discription h2{
+  display: inline-block;
   width: 170px;
-  padding: 0 56px;
+  padding: 2px 56px;
+  line-height: 1.0;
+  letter-spacing: 0.02em;
   text-align: center;
 }
-.promotion .nocolor{
-  background-color: #eeeeee;
-  color: black;
+.promotion p{
+  box-sizing: border-box;
+  line-height: 1.4;
+
 }
+
 .promotion .picture{
  display: inline-block;
  vertical-align: top;
@@ -146,62 +158,79 @@ nav .logo{
 
 .bonuses .bonus{
   display: inline-block;
-  vertical-align: top;
-  width: 396px;
+  vertical-align: bottom;
+  width: 397px;
+  font-size: 0;
 }
 .bonus img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
-  margin-bottom: 31px;
+  margin-top: 55px;
+  margin-bottom: 27px;
+  vertical-align: bottom;
 }
 .bonus h2{
+  font-size: 21px;
   text-align: center;
-  margin-bottom: 31px;
+  margin-bottom: 21px;
 }
 .bonus p{
+  font-size: 14px;
   text-align: center;
-  margin-bottom: 85px;
+  margin-bottom: 86px;
+  line-height: 1.5em;
+
+}
+.promotion .nocolor{
+  background-color: #eeeeee;
+  color: black;
+  padding-top: 0px;
 }
 .interest{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 97px;
+  margin-top: 49px;
   text-align: center;
   padding-bottom: 53px;
-  min-height: 760px;
-  background-image: url(../img/map.png);
+  min-height: 777px;
+/*  background-image: url(../img/map.png);*/
   background-position: bottom;
   background-repeat: no-repeat;
 }
 .interest h3{
   font-size: 30px;
+  margin-bottom: 23px;
 }
 .interest a{
   text-decoration: none;
   color: #000000;
+  line-height: 1.7em;
+  position: relative;
 }
 .interest .search{
   display: block;
   width: 568px;
   font-size: 21px;
+  font-weight: bold;
   color: #ffffff;
   margin: auto;
   box-sizing: border-box;
-  padding: 35px;
+  padding: 25px;
   background-color: #766357;
-  margin-top: 30px;
+  margin-top: 48px;
+}
+.interest{
+  position: relative;
 }
 .map-search{
   position: absolute;
-  display: none;
   width: 568px;
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
   color: #000000;
-  top: 2191px;
+  top: 86px;
   left: 50%;
   margin-left: -284px;
   z-index: 500;
@@ -214,7 +243,7 @@ nav .logo{
 .hotel-search{
   display: block;
     text-align: left;
-  padding-top: 69px;
+  padding-top: 56px;
 }
 .hotel-search span{
   font-size: 14px;
@@ -222,15 +251,77 @@ nav .logo{
   padding-left: 56px;
   display: inline-block;
   vertical-align: top;
-  margin-right:  120px;
-  margin-bottom: 57px;
-  padding-top: 0px;
+  margin-right:  26px;
+  margin-bottom: 31px;
+  padding-top: 1px;
 }
 .map-search input{
   margin-left: auto;
   margin-right: auto;
+  margin-top: 23px;
 }
-/* 669ec0 */
+.hotel-search .arrive-date,
+.hotel-search .leave-date{
+  display: inline-block;
+  width: 260px;
+  padding-left: 0px;
+}
+.hotel-search .arrive-date{
+  padding-left: 5px;
+}
+.hotel-search .calendar{
+  padding: 0;
+}
+.hotel-search .arrive-date:hover,
+.hotel-search .leave-date:hover{
+  background: #ebebeb;
+}
+.hotel-search .arrive-date:active,
+.hotel-search .leave-date:active{
+  border: 2px solid #e5e5e5;
+  background: #ffffff;
+}
+.additional-option{
+  display: inline-block;
+  width: 100%;
+}
+.additional-option .option{
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+  font-size: 0px;
+  position: relative;
+}
+.option .children{
+  padding-left: 50px;
+}
+.option .value-1{
+  padding-top: 0;
+  padding-left: 66px;
+  position: relative;
+}
+.option .value-2{
+  padding-top: 0;
+  padding-left: 53px;
+  position: relative;
+}
+
+.calendar{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 8px;
+  margin-left: 12px;
+  width: 21px;
+  height: 22px;
+  background-image: url(../img/icons/minus-plus-calendar.png);
+  background-position: -117px -15px;
+}
+.calendar:hover{
+  background-position: -15px -15px;
+}
+.calendar:active{
+  background-position: -66px -15px;
+}
 .map-search input[type="submit"]{
   display: block;
   width: 458px;
@@ -238,12 +329,11 @@ nav .logo{
   background-color: #81b3d2;
   border: 0;
   color: #ffffff;
-  font-weight: bold;
   font-size: 21px;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
   cursor:  pointer;
-  margin-bottom:55px;
-
+  margin-bottom:56px;
 }
 .map-search input[type="submit"]:hover{
   display: block;
@@ -276,36 +366,39 @@ nav .logo{
   background-image: url(../img/catalog_intro.jpg);
 
 }
+.selection h2{
+  font-size: 16px;
+}
 .infrastructure{
   font-size: 14px;
   color: #ffffff;
   min-height: 217px;
   box-sizing: border-box;
   padding-left: 72px;
-  padding-top: 17px;
+  padding-top: 16px;
   width: 312px;
   display: inline-block;
   vertical-align: top;
 }
 .infrastructure ul li,
 .property-type ul li{
-  margin-bottom: 23px;
+  margin-bottom: 14px;
+  padding-top: 12px;
+  list-style: none;
 }
 .infrastructure input[type="checkbox"]{
   display: none;
 }
 .infrastructure input[type="checkbox"] + label{
   display: block;
-  margin: 10px 0;
   line-height: 20px;
-  padding-left: 5px;
   position: relative;
   cursor: pointer;
 }
 .infrastructure input[type="checkbox"] + label::before{
   content: "";
   display: block;
-  left: -30px;
+  left: -40px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
@@ -315,7 +408,7 @@ nav .logo{
 
 .infrastructure input[type="checkbox"]:checked + label::after{
   content: "";
-  left: -30px;
+  left: -40px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
@@ -324,7 +417,7 @@ nav .logo{
 }
 .infrastructure input[type="checkbox"]:disabled + label::before{
   content: "";
-  left: -30px;
+  left: -40px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
@@ -333,46 +426,40 @@ nav .logo{
 }
 .infrastructure input[type="checkbox"]:checked:disabled + label::after{
   content: "";
-  left: -33px;
+  left: -43px;
+  top: -5px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
   background-position: -63px -15px;
   position: absolute;
 }
-
-
-.infrastructure ul li,
-.property-type ul li{
-  list-style: none;
-}
-
-
 .property-type{
   font-size: 14px;
   color: #ffffff;
   min-height: 217px;
   box-sizing: border-box;
   width: 288px;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-left: 15px;
   display: inline-block;
-  vertical-align: top
+  vertical-align: top;
 }
+
 .property-type input[type="checkbox"]{
   display: none;
 }
 .property-type input[type="checkbox"] + label{
   display: block;
-  margin: 10px 0;
+  margin: 0 0;
   line-height: 20px;
-  padding-left: 5px;
+  padding-left: 1px;
   position: relative;
   cursor: pointer;
 }
 .property-type input[type="checkbox"] + label::before{
   content: "";
-  left: -40px;
+  left: -50px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
@@ -381,7 +468,7 @@ nav .logo{
 }
 .property-type input[type="checkbox"]:checked + label::after{
   content: "";
-  left: -30px;
+  left: -40px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
@@ -390,7 +477,7 @@ nav .logo{
 }
 .property-type input[type="checkbox"]:disabled + label::before{
   content: "";
-  left: -30px;
+  left: -40px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
@@ -399,7 +486,7 @@ nav .logo{
 }
 .property-type input[type="checkbox"]:checked:disabled + label::after{
   content: "";
-  left: -33px;
+  left: -43px;
   width: 32px;
   height: 22px;
   background-image: url(../img/icons/checkbox.png);
@@ -407,35 +494,115 @@ nav .logo{
   position: absolute;
 }
 .cost-per-day{
-  font-size: 14px;
-  min-height: 217px;
-  box-sizing: border-box;
-  width: 600px;
-  color: #ffffff;
-  padding-left: 200px;
-  padding-top: 17px;
+  padding-top: 26px;
+  padding-left: 210px;
   display: inline-block;
-  vertical-align: top;
-}
-.cost-per-day .accept{
-  border: 3px solid #ffffff;
-  width: 133px;
-  height: 32px;
-  background-color: inherit;
+  width: 318px;
+  font-size: 14px;
   color: #ffffff;
+}
+.cost-per-day-title{
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  position: relative;
+  left:-9px;
+}
+.price-controls{
+  height: 32px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
   border-radius: 2px;
-  text-transform: uppercase;
+  font-size: 0px;
+  position: relative;
+}
+.price-controls::after{
+  content: "";
   position: absolute;
-  right: 468px;
-  top: 202px;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%,-50%);
+}
+.price-controls label{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 26px;
+  vertical-align: top;
   cursor: pointer;
 }
-.cost-per-day .accept:hover{
-  background-color: #ffffff;
+.price-controls .min-price{
+  width: 90px;
+  padding-left: 65px;
+}
+.price-controls .max-price{
+  padding-left: 56px;
+}
+.price-controls input{
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+.range-controls{
+  position: relative;
+  margin-bottom: 32px;
+}
+.range-controls .scale{
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar{
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+.range-toggle{
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.range-toggle:hover{
+  background: #1e5081;
+}
+.range-toggle-min{
+  left:0;
+}
+.range-toggle-max{
+  left:80%;
+}
+.accept{
+  display: block;
+  margin: 0 auto;
+  padding: 6px 32px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border:2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  left:-5px;
+}
+.accept:hover{
+  background: #ffffff;
   color: #000000;
 }
-
-
 .selection-result-menu{
   display: inline-block;
   vertical-align: top;
@@ -444,13 +611,13 @@ nav .logo{
   display: inline-block;
   vertical-align: top;
   margin-left: 72px;
-  margin-top: 14px;
-  margin-bottom: 16px;
+  margin-top: 11px;
+  margin-bottom: 10px;
 }
 .selection-result-menu .sort{
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 .sort .active a{
   color: #81b3d2;
@@ -469,14 +636,15 @@ nav .logo{
   display: inline-block;
   vertical-align: top;
   font-weight: bold;
-  margin-left: 50px;
-  margin-top: 40px;
+  margin-left: 45px;
+  margin-top: 38px;
   margin-bottom: 14px;
+  font-size: 12px;
 }
 .sort ul{
   display: inline-block;
   vertical-align: top;
-  margin-top: 40px;
+  margin-top: 38px;
   padding: 0 0;
 }
 .sort  li{
@@ -486,6 +654,10 @@ nav .logo{
   font-size: 12px;
   text-decoration: none;
 }
+.sort li:nth-child(2),
+.sort li:nth-child(3){
+  margin-left: 30px;
+}
 .sort  a{
   text-decoration: none;
   color: #b2b2b2;
@@ -493,7 +665,7 @@ nav .logo{
 }
 
 .sort li:last-child{
-margin-right: 389px;
+margin-right: 354px;
 }
 
 .sort li a:hover{
@@ -506,7 +678,7 @@ margin-right: 389px;
   border: 0;
 }
 .sorting-up-down{
-  padding-left: 34px;
+  padding-left: 104px;
   padding-top: 25px;
 }
 .sorting-up-down li{
@@ -545,7 +717,6 @@ margin-right: 389px;
 .selection-result-menu .sorting-up-down{
   display: inline-block;
   vertical-align: top;
-  padding-right: 72px;
 }
 .sorting-up-down .active a{
   display: inline-block;
@@ -563,15 +734,14 @@ margin-right: 389px;
   border-right: 5px solid transparent;
   border-top: 10px solid #81b3d2;
 }
-
-
-
 .result{
   display: inline-block;
   vertical-align: top;
-  border: 1px solid #e5e5e5;
+  width: 1200px;
+  border-top:1px solid #e5e5e5;
   border-bottom: 0px;
   font-size: 0px;
+  padding-top: 6px;
 }
 
 .result .picture{
@@ -579,7 +749,7 @@ margin-right: 389px;
   vertical-align: top;
   width: 237px;
   box-sizing: border-box;
-  padding: 30px 30px 30px 72px;
+  padding: 24px 30px 30px 72px;
 }
 .result .result-name{
   font-size: 14px;
@@ -588,19 +758,25 @@ margin-right: 389px;
   box-sizing: border-box;
   vertical-align: top;
   padding-top: 5px;
-  padding-bottom: 43px;
+  padding-bottom: 28px;
+}
+.result-name h1{
+  margin: 0;
+  padding-top: 13px;
+  margin-bottom: 10px;
 }
 .result .reserve{
   font-size: 14px;
   display: inline-block;
 }
+
 .result .more{
   font-size: 14px;
   display: inline-block;
 }
 .result .rating{
   font-size: 14px;
-  padding-top: 64px;
+  padding-top: 8px;
   width: 311px;
   padding-bottom: 25.5px;
 
@@ -627,19 +803,32 @@ margin-right: 389px;
 }
 .more span{
   display: inline-block;
+  margin-bottom: 20px;
+}
+.underline{
+  border-bottom: 1px solid #e5e5e5;
 }
 .rating span{
+  display: block;
   box-sizing: border-box;
-  padding-left: 160px;
+  padding-left: 146px;
+  margin-top: 43px;
+  padding-right: 15px;
+  background-color: #f2f2f2;
+  color: #8b8b8b;
+  padding: 5px 0px;
+  width: 110px;
+  text-align: center;
+  margin-left: 130px;
 }
 .more{
-  margin-right: 6px;
+  margin-right: 2px;
 }
 .more a{
   display: block;
   font-weight: bolder;
   width: 110px;
-  margin-top: 20px;
+  margin-top: 0px;
   height: 27px;
   background-color: #81b3d2;
   text-align: center;
@@ -685,10 +874,11 @@ margin-right: 389px;
     vertical-align: top;
     box-sizing: border-box;
 }
+
 footer{
   position: absolute;
   bottom: 0px;
-  display: inline-block;
+  display: block;
   vertical-align: top;
   font-size: 0px;
 }
@@ -698,6 +888,7 @@ footer{
   width: 46px;
   height: 48px;
   font-size: 0;
+  margin-right: 2px;
   background-color: #81b3d2;
   position: relative;
 }
@@ -717,7 +908,7 @@ footer{
 }
 .social-btn-twitter::before{
   width: 10px;
-  height: 19px;
+  height: 22px;
   background-position: -15px -15px;
 }
 .social-btn-youtube::before{
@@ -737,22 +928,17 @@ footer{
 .social-btn-facebook:active::before{
   background-position: -142px -15px;
 }
-
-
-
-
-
-
 footer .hashtag{
   font-size: 14px;
   text-decoration: none;
   display: inline-block;
   vertical-align: top;
   width: 400px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
   vertical-align: top;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 48px;
+  padding-bottom: 1px;
   min-height: 70px;
 }
 footer .hashtag a{
@@ -765,7 +951,7 @@ footer .social{
   font-size: 14px;
   display: inline-block;
   width: 400px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
   vertical-align: bottom;
   padding-top: 36px;
@@ -776,28 +962,28 @@ footer .footer-logo{
   font-size: 14px;
   display: inline-block;
   width: 400px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
   vertical-align: top;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 26px;
+  padding-bottom: 24px;
   min-height: 70px;
 }
 footer .footer-logo span{
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 24px;
   font-size: 14px;
   vertical-align: middle;
-  font-weight: bold;
   text-decoration: none;
   color: #000000;
 }
+
 .academylogo{
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  left: 5px;
-  top: 10px;
+  left: 3px;
+  top: 14px;
   width: 113px;
   height: 39px;
   background-color: inherit;
