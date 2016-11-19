@@ -39,15 +39,15 @@ h1 {
   width: 240px;
 }
 
-.main-menu .active a {
+.main-menu .active {
   color: #766357;
 }
 
-.main-menu .active a:hover {
+.main-menu .active:hover {
   color: #8a7d75;
 }
 
-.main-menu .active a:active {
+.main-menu .active:active {
   color: #d8d3d0;
 }
 
@@ -520,7 +520,7 @@ nav .logo {
   vertical-align: top;
 }
 
-.infrastructure ul li, .property-type ul li {
+.infrastructure  li, .property-type  li {
   margin-bottom: 14px;
   padding-top: 12px;
   list-style: none;
@@ -791,17 +791,17 @@ nav .logo {
   margin-bottom: 20px;
 }
 
-.sort .active a {
+.sort .active {
   color: #81b3d2;
   border: none;
 }
 
-.sort .active a:hover {
+.sort .active:hover {
   color: #81b3d2;
   border: none;
 }
 
-.sort .active a:active {
+.sort .active:active {
   color: #81b3d2;
   border: none;
   font-weight: normal;
@@ -846,12 +846,12 @@ nav .logo {
   margin-right: 354px;
 }
 
-.sort li a:hover {
+.sort-list a:hover {
   color: #81b3d2;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sort li a:active {
+.sort-list a:active {
   color: #000000;
   font-weight: normal;
   border: 0;
@@ -907,7 +907,7 @@ nav .logo {
   vertical-align: top;
 }
 
-.sorting-up-down .active a {
+.sort-triangle .active{
   display: inline-block;
   width: 0;
   height: 0;
@@ -916,7 +916,7 @@ nav .logo {
   border-top: 10px solid #81b3d2;
 }
 
-.sorting-up-down .active a:hover {
+.sort-triangle .active:hover {
   display: inline-block;
   width: 0;
   height: 0;
@@ -1195,7 +1195,7 @@ footer .footer-logo {
   min-height: 70px;
 }
 
-footer .footer-logo span {
+.footer-logo span {
   display: inline-block;
   padding-top: 24px;
   font-size: 14px;
