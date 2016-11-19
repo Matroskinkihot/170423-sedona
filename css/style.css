@@ -10,7 +10,7 @@ body {
   margin: 0px auto;
   box-shadow: 0 10px 30px 8px rgba(0, 0, 0, 0.15);
   position: relative;
-  min-height: 936px;
+  min-height: 932px;
 }
 
 img {
@@ -27,7 +27,7 @@ h1 {
 }
 
 .main-menu {
-  padding: 20px 0;
+  padding: 19px 0 20px 0;
   font-size: 0px;
   list-style: none;
 }
@@ -79,7 +79,7 @@ nav .logo {
 }
 
 .main-menu li:nth-child(2) {
-  padding-left: 72px;
+  padding-left: 73px;
   box-sizing: border-box;
   margin-right: 240px;
 }
@@ -120,7 +120,7 @@ nav .logo {
 
 .promotion-title {
   padding-top: 40px;
-  padding-bottom: 12px;
+  padding-bottom: 41px;
   width: 578px;
   line-height: 1.20;
   text-align: center;
@@ -141,7 +141,7 @@ nav .logo {
 }
 
 .promotion h2 {
-  margin-top: 44px;
+  margin-top: 45px;
   margin-bottom: 25px;
 }
 
@@ -168,7 +168,7 @@ nav .logo {
 .discription h2 {
   display: inline-block;
   width: 170px;
-  padding: 2px 56px;
+  padding: 0px 56px;
   line-height: 1.0;
   letter-spacing: 0.02em;
   text-align: center;
@@ -176,15 +176,19 @@ nav .logo {
 
 .promotion p {
   box-sizing: border-box;
-  line-height: 1.4;
+  line-height: 1.5;
 }
-
+.promotion-2 h2{
+  padding-top: 2px;
+}
 .promotion .picture {
   display: inline-block;
   vertical-align: top;
   width: 800px;
 }
-
+.promotion-1 h2{
+  padding-top: 3px;
+}
 .bonuses .bonus {
   display: inline-block;
   vertical-align: bottom;
@@ -205,13 +209,15 @@ nav .logo {
   font-size: 21px;
   text-align: center;
   margin-bottom: 21px;
+  padding-top: 2px;
 }
 
 .bonus p {
   font-size: 14px;
   text-align: center;
-  margin-bottom: 86px;
+  margin-bottom: 84px;
   line-height: 1.5em;
+  padding-top: 1px;
 }
 
 .promotion .nocolor {
@@ -219,14 +225,16 @@ nav .logo {
   color: black;
   padding-top: 0px;
 }
-
+.nocolor{
+  padding: 0;
+  margin: 0;
+}
 .interest {
   margin-left: auto;
   margin-right: auto;
   margin-top: 49px;
   text-align: center;
-  padding-bottom: 53px;
-  min-height: 777px;
+  min-height: 704px;
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -242,7 +250,9 @@ nav .logo {
   line-height: 1.7em;
   position: relative;
 }
-
+.interest p{
+  line-height: 1.8;
+}
 .interest .search {
   display: block;
   width: 568px;
@@ -253,7 +263,7 @@ nav .logo {
   box-sizing: border-box;
   padding: 25px;
   background-color: #766357;
-  margin-top: 48px;
+  margin-top: 46px;
 }
 
 .interest {
@@ -305,7 +315,7 @@ nav .logo {
   margin-right: auto;
   background-color: #ffffff;
   color: #000000;
-  top: 236px;
+  top: 238px;
   left: 50%;
   margin-left: -284px;
   z-index: 500;
@@ -325,7 +335,7 @@ nav .logo {
 .hotel-search {
   display: block;
   text-align: left;
-  padding-top: 68px;
+  padding-top: 61px;
 }
 
 .hotel-search span {
@@ -335,14 +345,33 @@ nav .logo {
   display: inline-block;
   vertical-align: top;
   margin-right: 26px;
-  margin-bottom: 45px;
-  padding-top: 1px;
+  padding-top: 8px;
 }
-
+.hotel-search .arrive-date{
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 56px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 26px;
+  margin-bottom: 34px;
+  padding: 8px 0;
+  border: 0;
+}
+.hotel-search .leave-date{
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 56px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 22px;
+  margin-bottom: 42px;
+  padding: 8px 0;
+  border: 0;
+}
 .map-search input {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 63px;
 }
 
 .hotel-search .arrive-date, .hotel-search .leave-date {
@@ -351,23 +380,31 @@ nav .logo {
   padding-left: 0px;
 }
 
-.hotel-search .arrive-date {
+.hotel-search .arrive-date,
+.hotel-search .leave-date {
   padding-left: 5px;
 }
 
 .hotel-search .calendar {
   padding: 0;
+  margin-top: 4px;
 }
 
 .hotel-search .arrive-date:hover, .hotel-search .leave-date:hover {
   background: #ebebeb;
 }
 
-.hotel-search .arrive-date:active, .hotel-search .leave-date:active {
+.hotel-search .arrive-date:focus, .hotel-search .leave-date:focus {
   border: 2px solid #e5e5e5;
   background: #ffffff;
+  outline: none;
+  padding: 6px 0;
+  padding-left: 3px;
+  margin-right: 24px;
 }
-
+.hotel-search .leave-date:focus {
+  margin-right: 20px;
+}
 .additional-option {
   display: inline-block;
   width: 100%;
@@ -468,6 +505,8 @@ nav .logo {
   letter-spacing: -0.05em;
   text-transform: uppercase;
   cursor: pointer;
+  font-weight: bold;
+  margin-top: 62px;
   margin-bottom: 56px;
 }
 
@@ -1093,7 +1132,9 @@ footer {
   vertical-align: top;
   font-size: 0px;
 }
-
+.overlay{
+  bottom: 0px;
+}
 .social-btn {
   display: inline-block;
   vertical-align: top;
@@ -1156,7 +1197,7 @@ footer .hashtag {
   display: inline-block;
   vertical-align: top;
   width: 400px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.85);
   vertical-align: top;
   text-align: center;
   padding-top: 48px;
@@ -1175,7 +1216,7 @@ footer .social {
   font-size: 14px;
   display: inline-block;
   width: 400px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.85);
   text-align: center;
   vertical-align: bottom;
   padding-top: 36px;
@@ -1187,7 +1228,7 @@ footer .footer-logo {
   font-size: 14px;
   display: inline-block;
   width: 400px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.85);
   vertical-align: top;
   text-align: center;
   padding-top: 26px;
