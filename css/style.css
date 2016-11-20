@@ -12,7 +12,10 @@ body {
   position: relative;
   min-height: 932px;
 }
-
+iframe{
+  background-color: #c8daa6;
+  border:0px;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -113,6 +116,7 @@ nav .logo {
   display: block;
   height: 57px;
   width: 1200px;
+  background-color: #ffffff;
   background-image: url(../img/intro_effect.png);
   position: absolute;
   top: 507px;
@@ -462,6 +466,7 @@ nav .logo {
 }
 
 .number .minus {
+  background-color: #f2f2f2;
   background-image: url(../img/icons/minus-plus-calendar.png);
   background-position: -240px 4px;
   border: 0;
@@ -471,6 +476,7 @@ nav .logo {
 }
 
 .number .plus {
+  background-color: #f2f2f2;
   background-image: url(../img/icons/minus-plus-calendar.png);
   background-position: -364px 0px;
   border: 0;

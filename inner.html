@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-mini.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Holet in Sedona</title>
 </head>
@@ -65,8 +65,8 @@
       <div class="cost-per-day">
         <div class="cost-per-day-title">Стоимость в сутки (Р):</div>
         <div class="price-controls">
-          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          <label for="minimum-price" class="min-price">от <input id="minimum-price" type="text" name="min-price" value="0"></label>
+          <label for="maximum-price" class="max-price">до <input id="maximum-price" type="text" name="max-price" value="3000"></label>
         </div>
         <div class="range-controls">
           <div class="scale">
@@ -95,7 +95,7 @@
     <div class="sorting-up-down">
       <ul class="sort-triangle">
         <li><a class="up" href="#"></a></li>
-        <li><a  class="active" class="down" href="#"></a></li>
+        <li><a  class="active down" href="#"></a></li>
       </ul>
     </div>
   </section>
