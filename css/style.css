@@ -86,7 +86,7 @@ nav .logo {
 
 .main-menu li:last-child {
   padding-left: 90px;
-  padding-right: 61px;
+  padding-right: 57px;
   width: auto;
 }
 
@@ -307,7 +307,9 @@ nav .logo {
     transform: translateY(0px);
   }
 }
-
+.search-form{
+  font-size: 0px;
+}
 .map-search {
   position: absolute;
   width: 568px;
@@ -335,38 +337,40 @@ nav .logo {
 .hotel-search {
   display: block;
   text-align: left;
-  padding-top: 61px;
+  padding-top: 59px;
 }
-
 .hotel-search span {
   font-size: 14px;
   font-weight: bold;
   padding-left: 56px;
   display: inline-block;
   vertical-align: top;
-  margin-right: 26px;
-  padding-top: 8px;
+  margin-right: 21px;
+  padding-top: 9px;
 }
 .hotel-search .arrive-date{
   font-size: 14px;
-  font-weight: bold;
-  padding-left: 56px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 26px;
-  margin-bottom: 34px;
-  padding: 8px 0;
-  border: 0;
-}
-.hotel-search .leave-date{
-  font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   padding-left: 56px;
   display: inline-block;
   vertical-align: top;
   margin-right: 22px;
-  margin-bottom: 42px;
-  padding: 8px 0;
+  margin-left: 2px;
+  margin-bottom: 31px;
+  padding: 10px 0;
+  border: 0;
+}
+.hotel-search .leave-date{
+  font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  padding-left: 56px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 22px;
+  margin-bottom: 28px;
+  padding: 10px 0;
   border: 0;
 }
 .map-search input {
@@ -376,15 +380,19 @@ nav .logo {
 
 .hotel-search .arrive-date, .hotel-search .leave-date {
   display: inline-block;
-  width: 260px;
+  width: 334px;
   padding-left: 0px;
+  background: #f2f2f2;
 }
 
-.hotel-search .arrive-date,
-.hotel-search .leave-date {
-  padding-left: 5px;
+.hotel-search .arrive-date{
+  padding-left: 12px;
+  position: relative;
 }
-
+.hotel-search .leave-date{
+  padding-left: 11px;
+  position: relative;
+}
 .hotel-search .calendar {
   padding: 0;
   margin-top: 4px;
@@ -395,11 +403,12 @@ nav .logo {
 }
 
 .hotel-search .arrive-date:focus, .hotel-search .leave-date:focus {
+  width: 329px;
   border: 2px solid #e5e5e5;
   background: #ffffff;
   outline: none;
-  padding: 6px 0;
-  padding-left: 3px;
+  padding: 8px 0;
+  padding-left: 12px;
   margin-right: 24px;
 }
 .hotel-search .leave-date:focus {
@@ -407,6 +416,7 @@ nav .logo {
 }
 .additional-option {
   display: inline-block;
+  vertical-align: top;
   width: 100%;
   font-weight: bold;
   padding-left: 56px;
@@ -415,77 +425,97 @@ nav .logo {
 
 .additional-option .number {
   display: inline-block;
+  vertical-align: top;
 }
-
+.additional-option label{
+  font-size: 14px;
+}
+.additional-option input{
+  font-size: 14px;
+}
 .additional-option .value {
   display: inline-block;
-  width: 16px;
-  margin: 0 18px;
+  width: 36px;
+  height: 36px;
+  margin: -5 0 0 0;
   border: none;
+  background: #f2f2f2;
   font-weight: bold;
   text-align: center;
 }
 
 .additional-option .minus {
-  margin-left: 50px;
-  background: white;
+  vertical-align: top;
+  margin-left: 41px;
+  background-color: #f2f2f2;
 }
 
 .additional-option .plus {
-  margin-right: 64px;
-  background: white;
+  vertical-align: top;
+  margin-right: 52px;
+  background-color: #f2f2f2;
 }
 
-.number .minus, .number .plus {
-  width: 12px;
-  height: 16px;
-  vertical-align: middle;
-}
 
 .additional-option .children {
-  margin-left: 40px;
+  margin-left: 28px;
 }
 
 .number .minus {
   background-image: url(../img/icons/minus-plus-calendar.png);
-  background-position: -253px -11px;
+  background-position: -240px 4px;
   border: 0;
   cursor: pointer;
+  width: 38px;
+  height: 38px;
 }
 
 .number .plus {
   background-image: url(../img/icons/minus-plus-calendar.png);
-  background-position: -376px -15px;
+  background-position: -364px 0px;
   border: 0;
   cursor: pointer;
+  width: 38px;
+  height: 38px;
 }
 
 .number .minus:hover {
-  background-position: -169px -11px;
+  background-position: -156px 4px;
+  background-color: #ebebeb;
+  outline: none;
 }
 
 .number .plus:hover {
-  background-position: -294px -15px;
+  background-position: -282px 0px;
+  background-color: #ebebeb;
+  outline: none;
 }
 
 .number .minus:active {
-  background-position: -211px -11px;
+  background-position: -198px 4px;
+  outline: none;
 }
 
 .number .plus:active {
-  background-position: -335px -15px;
+  background-position: -323px 0px;
+  outline: none;
 }
 
 .calendar {
   display: inline-block;
   vertical-align: top;
-  margin-left: 15px;
+  margin-left: 13px;
   width: 21px;
   height: 22px;
   background-image: url(../img/icons/minus-plus-calendar.png);
   background-position: -117px -15px;
+  position: absolute;
+  right: 43px;
+  top:62px;
 }
-
+.calendar-2{
+  top: 128px;
+}
 .calendar:hover {
   background-position: -15px -15px;
 }
@@ -506,7 +536,7 @@ nav .logo {
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
-  margin-top: 62px;
+  margin-top: 54px;
   margin-bottom: 56px;
 }
 
