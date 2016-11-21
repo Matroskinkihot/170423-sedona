@@ -116,7 +116,6 @@ nav .logo {
   display: block;
   height: 57px;
   width: 1200px;
-  background-color: #ffffff;
   background-image: url(../img/intro_effect.png);
   position: absolute;
   top: 507px;
@@ -431,8 +430,14 @@ nav .logo {
   display: inline-block;
   vertical-align: top;
 }
-.additional-option label{
+.additional-option span{
+  display: inline-block;
+  vertical-align: top;
   font-size: 14px;
+}
+.additional-option .age-type{
+  margin: 0;
+  padding: 11px 0 0 0;
 }
 .additional-option input{
   font-size: 14px;
